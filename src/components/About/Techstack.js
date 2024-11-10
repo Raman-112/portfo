@@ -5,17 +5,26 @@ import {
   DiJavascript1,
   DiReact,
   DiNodejs,
-  DiMongodb,
+  DiBootstrap,
   DiPython,
   DiGit,
-  DiJava,
+  DiCss3  ,
+  DiHtml5,
+  DiOpensource,
 } from "react-icons/di";
 import {
-  SiRedis,
+  SiAmazonwebservices,
   SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
+  SiNpm,
+  SiMysql,
+  SiNumpy,
+  SiOpencv,
+  SiPandas,
+  SiScikitlearn,
+  SiJson,
+  SiCanva,
+  SiAdobe,
+  SiPostman,
 } from "react-icons/si";
 
 function Techstack() {
@@ -23,6 +32,12 @@ function Techstack() {
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
         <CgCPlusPlus />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiCss3 />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiHtml5 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
@@ -34,13 +49,13 @@ function Techstack() {
         <DiReact />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
+        <DiBootstrap />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
+        <DiPython />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
+        <DiOpensource />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
@@ -49,17 +64,48 @@ function Techstack() {
         <SiFirebase />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
+        <SiAmazonwebservices />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
+        <SiNpm />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
+        <SiMysql />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
+        <SiNumpy />
       </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiOpencv />
+      </Col>      
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPandas />
+      </Col>      
+      <Col xs={4} md={2} className="tech-icons">
+        <SiScikitlearn />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiJson />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiCanva />
+      </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
+        <SiAdobe />
+      </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPostman />
+      </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
+        <SiCanva />
+      </Col>
+      
+
+ 
+
     </Row>
   );
 }
