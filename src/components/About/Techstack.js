@@ -6,9 +6,9 @@ import {
   DiReact,
   DiNodejs,
   DiBootstrap,
-  DiPython,
   DiGit,
-  DiCss3  ,
+  DiCss3,
+  DiPython,
   DiHtml5,
   DiOpensource,
 } from "react-icons/di";
