@@ -24,7 +24,6 @@ import {
   SiJson,
   SiCanva,
   SiAdobe,
-  SiPostman,
 } from "react-icons/si";
 
 function Techstack() {
@@ -95,9 +94,7 @@ function Techstack() {
         <SiAdobe />
       </Col>
 
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
-      </Col>
+
 
       <Col xs={4} md={2} className="tech-icons">
         <SiCanva />
