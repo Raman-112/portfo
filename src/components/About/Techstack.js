@@ -96,9 +96,7 @@ function Techstack() {
 
 
 
-      <Col xs={4} md={2} className="tech-icons">
-        <SiCanva />
-      </Col>
+
       
 
  
