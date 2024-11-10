@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&family=Satisfy&display=swap');
+
+/* Basic section styling */
+.home-section {
+  display: flex;
+  align-items: center; /* Center align items vertically */
+  justify-content: space-between;
+  color: #fff;
+  padding: 20px 20px 50px;
+  background-color: #0D0D30;
+  margin-top: -50px;
+}
+
+/* Intro text adjustments */
+.intro-text {
+  margin-top: -120px;
+  margin-bottom: 40px;
+  padding-left: 70px;
+}
+  
+.intro-text h1 {
+  font-family: 'Satisfy', cursive;
+  font-size: 70px;
+  color: #fff !important;
+}
+
+.intro-text h2 {
+  font-family: 'Rubik Wet Paint', cursive;
+  font-size: 2.5rem;
+  color: #C770F0;
+  margin-bottom: 0.5rem;
+}
+
+.intro-text h3 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #7c4ee7;
+}
+
+.image-container img {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  margin-left: 20px; /* Space between text and image */
+  margin-top: -120px;
+  margin-bottom: 40px;
+}
+
+.image-container img:hover {
+  transform: scale(1.05);
+}  
+
+/* Typewriter effect */
+.typewriter {
+  font-family: 'Satisfy', cursive;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #7c4ee7;
+  overflow: hidden; /* Hide overflow */
+  white-space: nowrap; /* Keep text on a single line */
+  display: inline-block; /* Prevent line breaks */
+  border-right: 0.15em solid #7c4ee7; /* Blinking cursor */
+  line-height: 1; /* Set consistent line height */
+  height: 2.2rem; /* Fixed height to prevent shifting */
+  padding-bottom: 2px; /* Adjust padding to minimize shifting */
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #7c4ee7 }
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .home-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 0; /* Remove upward shift for mobile */
+  }
+  .intro-text {
+    padding-left: 0px;
+  }
+    
+
+  .image-container img {
+    width: 250px;
+    margin-top: 20px;
+  }
+
+  .intro-text h1 {
+    font-size: 2.6rem;
+  }
+
+  .intro-text h2 {
+    font-family: 'Rubik Wet Paint', cursive;
+    font-size: 2.2rem;
+    color: #C770F0;
+    margin-bottom: 0.5rem;
+  }
+
+  .intro-text h3 {
+    font-size: 2.0rem;
+  }
+}
+
+/* Laptop View */
+@media (max-width: 768px) {
+  .home-section {
+    justify-content: space-around;
+    padding: 30px 50px 50px; /* Adjusted padding for laptop view */
+    margin-top: -30px; /* Shift upwards on desktop/laptop */
+  }
+}
+
+
+
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.1s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+#tsparticles {
+  position: fixed !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  width: 100%;
+  height: 100%;
+}

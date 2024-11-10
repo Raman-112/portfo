@@ -1,0 +1,164 @@
+/* Smooth scrolling for the whole page */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    padding-top: 68px; /* Adjust this value based on the height of your header */
+}
+
+/* Styling for the custom header */
+.custom-header {  
+    background-color: #181a27;
+    padding: 10px 20px;
+    position: fixed!important;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    top: 0;           /* Positions it at the top of the page */
+    width: 100%;      /* Makes the header span the full width of the viewport */
+    z-index: 1000;    /* Ensures the header stays on top of other content */
+}
+
+
+.custom-header.scrolled {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on scroll */
+}
+
+/* Logo styling */
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    margin-right: 100px;
+}
+
+/* Navbar link styling */
+.navbar-nav .nav-link {
+    color: white;
+    margin-right: 50px;
+    margin-top: 1px;
+    font-size: 1.3rem;
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav-link.active{
+    color: #9b59b6!important; 
+}
+
+.nav-link.nav-link svg{
+    margin-top: -4px;
+}
+/* Hover effect for navbar links */
+.navbar-nav .nav-link:hover {
+    color: #9b59b6;
+}
+
+/* Underline effect on hover */
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #9b59b6;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* GitHub icon styling */
+.github-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #9b59b6;
+}
+
+.github-icon:hover {
+    color: #fff;
+}
+
+/* Toggler Styles */
+.navbar-toggler {
+    border: none !important;
+    cursor: pointer;
+    position: relative;
+    z-index: 9999;
+    box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+    width: 24px;
+    height: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: transparent!important;
+}
+
+.navbar-toggler-icon span {
+    display: block;
+    margin-top: 5px;
+    width: 25px;
+    height: 3.4px;
+    background-color: #9b59b6;
+    transition: all 0.3s ease;
+}
+
+/* Transform spans to cross when active */
+.navbar-toggler.active .navbar-toggler-icon span:nth-child(1) {
+    transform: rotate(45deg) translate(5.5px, 5px);
+}
+
+.navbar-toggler.active .navbar-toggler-icon span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler.active .navbar-toggler-icon span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.navbar-toggler-icon span + span {
+    margin-top: 4px;
+}
+
+/* Navbar Collapse Styling */
+.navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar-collapse.collapse.show {
+    padding: 0;
+}
+
+/* Additional styling for mobile responsiveness */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: row;
+    }
+    
+}
