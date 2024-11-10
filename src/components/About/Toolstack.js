@@ -11,8 +11,9 @@ import {
   SiGithub,
   SiGitlab,
   SiGooglecolab,
-  SiAnaconda,
   SiFigma,
+  SiAnaconda,
+  
   SiGooglecloud,
 } from "react-icons/si";
 
